@@ -1,0 +1,301 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.base{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #dbd7d7;
+}
+
+.base_header{
+  height: 15%;
+  position: relative;
+}
+
+.base_child{
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  margin: 0 auto;
+  top: 2.5%;
+  left: 2.5%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.input_search{
+  position: absolute;
+  height: 40px;
+  width: 250px;
+  top: 20%;
+  left: 5%;
+  outline: none;
+  font-size: 20px;
+  color: #807e7e;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+.btn_addd{
+  position: absolute;
+  top: 20%;
+  right: 20px;
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(100, 100, 239);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+
+table{
+  width: 90%;
+  border: 1px #ccc solid;
+  margin-left: 5%;
+  border: 1px solid #0e0e0e;
+  border-collapse: collapse;
+
+}
+
+thead{
+  background-color: #35608d;
+  height: 50px;
+  color: #fff;
+}
+
+tbody{
+  height: calc(100% -50px);
+  border: 1px solid #151515;
+
+}
+
+tr{
+  height: 50px;
+  border-bottom: 1px solid #9a9898;
+}
+td{
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+/* row : child base */
+
+h1{
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid blue;
+}
+.base_child>.first{
+  padding-top: 30px;
+}
+.row1{
+  /* margin-top: 20px; */
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.element{
+  width: 30%;
+  margin-top: 5px;
+}
+
+.inputt{
+  height: 50px;
+  width: 250px;
+  top: 50px;
+  left: 50px;
+  outline: none;
+  font-size: 18px;
+  color: #807e7e;
+  padding-left: 20px;
+  border: 1px solid #b7b6b6;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.element>input{
+  height: 50px;
+  width: 300px;
+  top: 50px;
+  left: 50px;
+  outline: none;
+  font-size: 18px;
+  color: #807e7e;
+  padding-left: 20px;
+  border: 1px solid #b7b6b6;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.element_name{
+  height: 30px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn_form{
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  right: 20%;
+  bottom: 5%;
+
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(100, 100, 239);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.btn_form_cancel{
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  right: 5%;
+  bottom: 5%;
+
+
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(100, 100, 239);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* COMBOBOX */
+
+ul {
+  display: block;
+  margin-top: 50px;
+  width: 320px;
+  height: 100px;
+  padding: 0;
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+ul>li{
+  scroll-behavior: smooth;
+  list-style: none;
+  height: 25px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+table{
+  cursor: pointer;
+}
+
+.header>a{
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  width: 150px;
+  height: 100%;
+  right: 1%;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Phân trang */
+.pagination{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  position: absolute;
+  bottom: -15px;
+  height: 50px;
+  overflow: hidden;
+}
+
+
+.pagination li{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 1px solid #1f2c43;
+  display: block;
+  background-color: #c0bebe;
+  padding: 0;
+}
+.pagination li a{
+  text-align: center;
+  padding-top: 2px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.pagination li:first-child, .pagination li:last-child{
+  border-radius: 50%;
+}
+
+.pagination li:hover {
+  background-color: #345389;
+}
+.pagination li.active {
+  background-color:#1f2c43;
+  text-decoration: none;
+
+}
+
+ul li {
+  cursor: pointer;
+}
+
+
+
+
+
